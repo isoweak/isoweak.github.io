@@ -24,15 +24,15 @@ $(() => {
                 for(j=0;j<arr.length;j++){
                     if(arr[j]==s){
                         i--
-                        arr.splice(j,1);
                         b = 0
+                        break
                     }
                 }
                 if(b){
                     str += s
                     str += ' '
+                    arr.push(s);
                 }
-                arr.push(s);
             }
         }
 

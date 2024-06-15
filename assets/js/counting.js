@@ -56,6 +56,7 @@ $(() => {
                             $('#ress').append(`<div>${i}: ${Array[i]}</div>`)
                         }
                     }
+                    $('#hist').prepend(`<div>${c}</div>`)
                 }
             }
             $('#num').val("")

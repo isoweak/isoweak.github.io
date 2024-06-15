@@ -10,9 +10,6 @@ $(() => {
         if(r != ""){
             c = parseInt(r)
             if(c < 100 && c >= 0){
-                console.log(c===1)
-                console.log(c==='1')
-                console.log(Array[c])
                 Array[c]++
                 $('#ress').empty()
                 for(var i = 0; i < 100; i++){
@@ -20,6 +17,7 @@ $(() => {
                         $('#ress').append(`<div>${i}: ${Array[i]}</div>`)
                     }
                 }
+                $('#hist').prepend(`<div>${c}</div>`)
             }
         }
         $('#num').val("")
@@ -40,6 +38,7 @@ $(() => {
                         $('#ress').append(`<div>${i}: ${Array[i]}</div>`)
                     }
                 }
+                $('#hist').prepend(`<div>${-c}</div>`)
             }
         }
         $('#num').val("")
@@ -50,9 +49,6 @@ $(() => {
             if(r != ""){
                 c = parseInt(r)
                 if(c < 100 && c >= 0){
-                    console.log(c===1)
-                    console.log(c==='1')
-                    console.log(Array[c])
                     Array[c]++
                     $('#ress').empty()
                     for(var i = 0; i < 100; i++){
